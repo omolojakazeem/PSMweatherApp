@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather App</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap-4.4.1-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="static/css/style.css">
+	
+</head>
+<body>
+	<!-- Image and text -->
+	<nav class="navbar navbar-expand-lg navbar-light" id="nav_bar">
+		<div class="container">
+			<a class="navbar-brand navbar-link weather">
+			  	<img src="static/img/logo.png" class="d-inline-block align-top logo" alt="logo">
+				<strong>Weather APP</strong>
+		  	</a>
+		  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		    	<span class="navbar-toggler-icon"></span>
+		  	</button>
+
+		   <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
+			    <ul class="navbar-nav nav-list ">
+			      <li class="nav-item active">
+			        <a class="nav-link" href="index.html">Current <span class="sr-only">(current)</span></a>
+			      </li>
+			      <!--<li class="nav-item">
+			        <a class="nav-link" href="forcast.html">Forecast</a>
+			      </li> -->
+			      <li class="nav-item">
+			        <a class="nav-link" href="https://openweathermap.org/" target="_blank">Open Weather Map</a>
+			      </li>
+			    </ul>
+	  		</div>
+		</div>
+	  
+	</nav>
+	<div class="jumbotron jumbotron-fluid text-center" id="jumbt">
+	  <div class="container ">
+	    <h1 class="display-4 ">Your Weather Assistant</h1>
+	    <h2 class="lead text-center" id="jumbo-head">Ubiquitous parameters</h2>
+	    <ul class="list-inline" id="list-item">
+	    	<li class="list-inline-item">Temperature</li>
+	    	<li class="list-inline-item">Pressure</li>
+	    	<li class="list-inline-item">Windspeed</li>
+	    	<li class="list-inline-item">Humidity</li>
+	    </ul>
+	  </div>
+	</div>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6">
+				<h1></h1>
+				<div class="jumbotron jumbotron-fluid text-center">
+				  <div class="container ">
+				    <h1 class="display-6 text-primary">Get Weather Information</h1>
+				    <div id="error">
+					</div>
+				   <div class="form-group ">
+				   		<input type="text" class="form-control form-control-lg" name="city" id="city-name" placeholder="Enter City Name"></input>
+				   		<div style="padding-top:20px;">
+				   			<button class="btn btn-primary" id="submit-city" >Get Weather Data</button>
+				   		</div>
+				   		
+				   </div>
+				    
+				  </div>
+				</div>
+				
+			</div>
+			<div class="col-sm-6">
+				<div class="card" >
+				  <div class="card-header">
+				    
+				    <h5 class="card-title">Results</h5>
+
+  
+				  </div>
+				  <div class="table-responsive" id="results">	
+
+				  </div>
+
+				  
+				</div>
+			</div>
+		</div>
+	</div>	
+
+	<div class="footer">
+		<div class="container" >
+			<div class="row ">
+				<div class="col footer-text ">
+					<p> Copyright &copy; 2020 PSM Weather App</p>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+<script type="text/javascript" src="static/js/jquery.js"></script>
+<script type="text/javascript" src="static/js/main.js"></script>
+<script type="text/javascript" src="bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>

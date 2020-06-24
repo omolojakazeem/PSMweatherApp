@@ -1,0 +1,48 @@
+
+body{
+	font-family: 'Tangerine', serif;
+	background-color: #ffffff;
+	font-size: 20px;
+	margin: 0px;
+	padding: 0px;
+}
+
+#nav_bar {
+	margin-bottom: 0px;
+	background-color: red;
+}
+
+.weather{
+	color: #4aa1f3 !important;
+	font-size: 25px;
+	font-weight: 600;
+}
+
+.nav-list > li > a{
+	color: #4aa1f3 !important;
+	
+	font-weight: 500;
+}
+
+.logo{
+	max-width: 40px;
+	max-height: 35px;
+}
+
+#jumbt{
+	background-image: url("../img/bg.jpg") !important;
+	color: white;
+}
+
+#list-item{
+	font-style: italic;
+}
+
+#jumbo-head{
+	font-size: 30px;
+}
+
+#input-city{
+	background-color: red;
+}
+
