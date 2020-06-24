@@ -1,5 +1,12 @@
 const apiKey = '25cc2ff5f14e9f4f3e56f97208ef7d35';
 var errorWidget;
+var x = location.protocol;
+var url
+
+function getProtocol(){
+	
+	return url;
+};
 
 $(document).ready(function(){
 	$("#submit-city").click(function(){
@@ -12,8 +19,16 @@ function getData(){
 	var cityName = $("#city-name").val();
 
 	if (cityName != ''){
+		if (x == 'https:') {
+				url = 'https://api.openweathermap.org/data/2.5/weather?q='+cityName +'&appid='+apiKey+'&units=metric'
+			}
+			else{
+				url = 'http://api.openweathermap.org/data/2.5/weather?q='+cityName +'&appid='+apiKey+'&units=metric'
+			}
+		
 		$.ajax({
-			url : 'https://api.openweathermap.org/data/2.5/weather?q='+cityName +'&appid='+apiKey+'&units=metric',
+			
+			url:url,
 			type:"GET",
 			dataType:'jsonp',
 			success: function(data){
